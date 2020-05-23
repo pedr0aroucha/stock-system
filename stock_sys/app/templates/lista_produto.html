@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+	
+{% block content %}
+
+<div class="page-header">	
+</div>
+<div class="table-responsive-xl">
+<table class="table table-striped table-dark">
+	<thead>
+		{% if produtos == [] %}
+		<h3><i>Nenhum Produto no Estoque</i></h1>
+		{% else %}
+		<h1>Lista de Produtos</h1>
+		<tr>	
+			<th scope="col">Nome do Produto &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+			<th scope="col">Quantidade do Produto &nbsp&nbsp</th>
+			<th scope="col">Preço de Venda R$ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+			<th scope="col">Preço de Compra R$ &nbsp&nbsp&nbsp&nbsp</th>
+		</tr>
+	</thead>
+	{% for produto in produtos %}
+	<tbody>
+		<tr>
+			<td>{{ produto.username }}</td>
+			<td>{{ produto.quantidade }}</td>
+			<td>{{ produto.preco_de_venda }}</td>
+			<td>{{ produto.preco_de_compra }}</td>
+			<td><a href="/excluir_produto/{{ produto.id }}" style=" color: #5c8b95;" >Remover</a></td>
+			<td><a href="/atualizar_produto/{{ produto.id }}" style=" color: #5c8b95;" >Atualizar</a></td>
+		</tr>
+	</tbody>
+	{% endfor %}
+	{% endif %}
+</table>
+		<a href="{{ url_for('adicionar_produto') }}"><input type="button" class="btn btn-outline-secondary" value="Adicionar"></a>
+		<a href="{{ url_for('index') }}" style=" color: #5c8b95;"> Voltar </a>
+</div> 
+
+{% endblock %}
