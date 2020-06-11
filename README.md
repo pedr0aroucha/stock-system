@@ -1,6 +1,6 @@
 # Stock System
 1 - Crie um ambiente virtual para rodar a aplicação(opcional).
 
-pip install requeriments.txt
+pip install -r requeriments.txt
 
 python run.py runserver
