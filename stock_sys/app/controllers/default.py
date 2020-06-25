@@ -51,7 +51,7 @@ def atualizar_produto(id):
 
     form = CadastroForm()
     form.insert_data(produtos)
-    return render_template("atualizar_produto.html", form = form, produtos = produtos)
+    return render_template("atualizar_produto.html", form = form)
 
     
 @app.route("/excluir_produto/<int:id>")

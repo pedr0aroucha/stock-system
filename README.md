@@ -1,6 +1,20 @@
-# Stock System
-1 - Crie um ambiente virtual para rodar a aplicação(opcional).
+<h1>Stock System</h1>
 
-pip install -r requeriments.txt
+<h3>Feito com :wrench: </h3>
+<ul>
+  <li>Python</li>
+  <ul>
+    <li>Flask</li>
+  </ul>
+  <li>HTML/CSS</li>
+  <li>Bootsrap</li>
+</ul>
 
-python run.py runserver
+<h3>Começando :rocket: </h3>
+
+<ul>
+  <i>Instalando as dependências</i>
+  <li> <strong> pip install -r requirements.txt </strong></li>
+  <i>Entre na pasta stock_system</i>
+  <i>Iniciando o servidor</i>
+  <li><strong> python run.py runserver </strong></li>
