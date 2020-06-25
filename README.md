@@ -16,5 +16,6 @@
   <i>Instalando as dependências</i>
   <li> <strong> pip install -r requirements.txt </strong></li>
   <i>Entre na pasta stock_system</i>
+  <br>
   <i>Iniciando o servidor</i>
   <li><strong> python run.py runserver </strong></li>
