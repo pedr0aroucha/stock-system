@@ -17,5 +17,5 @@
   <li> <strong> pip install -r requirements.txt </strong></li>
   <i>Entre na pasta stock_system</i>
   <br>
-  <i>Iniciando o servidor</i>
+  <i>Iniciando a App</i>
   <li><strong> python run.py runserver </strong></li>
