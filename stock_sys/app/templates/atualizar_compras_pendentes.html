@@ -4,19 +4,40 @@
 <div class="col-6 col-md-4 col-6" style="left: 380px">
     <section class="container-center">
         <h1>Atualizar Compra</h1>
-        <form action="" method="POST">
+        <form method="POST">
         {{ form.csrf_token }}
         <div class="form-group">
             <label>Nome</label>
-            <input type="text" id="nome" name="nome" required class="form-control">
+            <input 
+                type="text" 
+                id="nome" 
+                name="nome" 
+                required 
+                class="form-control" 
+                value="{{ compra_pendente.nome }}"
+            >
         </div>
         <div class="form-group">
             <label>Valor Pendente</label>
-            <input type="text" id="valor_pendente" required name="valor_pendente" class="form-control">
+            <input 
+                type="text" 
+                id="valor_pendente" 
+                name="valor_pendente" 
+                required 
+                class="form-control"
+                value="{{ compra_pendente.valor_pendente }}"
+            >
         </div>
         <div class="form-group">
             <label>Data</label>
-            <input type="date" id="data" name="dt"  required class="form-control">
+            <input 
+                type="date" 
+                id="data" 
+                name="dt" 
+                required 
+                class="form-control"
+                value="{{ compra_pendente.dt }}"
+            >
         </div>
         <input class="btn btn-outline-secondary" type="submit" value="Atualizar Compra Pendente">
         <a href="{{ url_for('lista_compra_pendente') }}" style=" color: #5c8b95;" >Voltar</a>

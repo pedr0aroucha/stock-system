@@ -48,10 +48,11 @@ def atualizar_produto(id):
     if form.validate_on_submit():
         form.populate_obj(produtos)
         db.session.commit()
+        return redirect(url_for("lista_produto"))
 
     form = CadastroForm()
     form.insert_data(produtos)
-    return render_template("atualizar_produto.html", form = form)
+    return render_template("atualizar_produto.html", form=form, produtos=produtos)
 
     
 @app.route("/excluir_produto/<int:id>")
@@ -112,10 +113,11 @@ def atualizar_compra_pendente(id):
     if form.validate_on_submit():
         form.populate_obj(compra_pendente)
         db.session.commit()
+        return redirect(url_for("lista_compra_pendente"))
 
     form = CompraPendenteForm()
     form.insert_data(compra_pendente)
-    return render_template("atualizar_compras_pendentes.html", form = form)
+    return render_template("atualizar_compras_pendentes.html", form = form, compra_pendente=compra_pendente)
 
 
 @app.route("/excluir_compra_pendente/<int:id>")
