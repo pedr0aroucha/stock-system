@@ -1,21 +1,41 @@
-<h1>Stock System</h1>
+# readme
 
-<h3>Feito com :wrench: </h3>
+### 🛠 TECHNOLOGIES USED
 <ul>
-  <li>Python</li>
-  <ul>
-    <li>Flask</li>
-  </ul>
-  <li>HTML/CSS</li>
-  <li>Bootsrap</li>
+  <li>Python - Flask </li>
+  <li>HTML/CSS - Bootstrap </li>
 </ul>
 
-<h3>Começando :rocket: </h3>
-
+### 🧰 DEPENDENCIES
 <ul>
-  <i>Instalando as dependências</i>
-  <li> <strong> pip install -r requirements.txt </strong></li>
-  <i>Entre na pasta stock_system</i>
-  <br>
-  <i>Iniciando a App</i>
-  <li><strong> python run.py runserver </strong></li>
+  <li> <a href="https://www.python.org/downloads/"> Python </a> </li>
+</ul>
+
+### 🚀 GET STARTING
+
+1. Make a clone :
+
+```sh
+  $ git clone https://github.com/pedr0aroucha/stock_system.git
+```
+
+2. Execute the aplication:
+
+```sh
+  # enter the folder
+  $ cd stock_system
+
+  # starting the virtual development environment
+  $ python3 -m venv .env
+  $ source .env/bin/activate
+
+  # Install the dependencies
+  $ pip install -r requirements.txt
+
+  # enter the folder
+  $ cd stock_sys
+
+  # Start the aplication
+  $ python run.py runserver
+
+```
