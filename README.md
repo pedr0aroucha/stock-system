@@ -1,15 +1,9 @@
-# readme
-
 ### 🛠 TECHNOLOGIES USED
-<ul>
-  <li>Python - Flask </li>
-  <li>HTML/CSS - Bootstrap </li>
-</ul>
+- Python - Flask
+- HTML/CSS - Bootstrap
 
 ### 🧰 DEPENDENCIES
-<ul>
-  <li> <a href="https://www.python.org/downloads/"> Python </a> </li>
-</ul>
+- <a href="https://www.python.org/downloads/"> Python </a>
 
 ### 🚀 GET STARTING
 
@@ -26,14 +20,11 @@
   $ cd stock_system
 
   # starting the virtual development environment
-  $ python3 -m venv .env
-  $ source .env/bin/activate
+  $ python3 -m venv env
+  $ source env/bin/activate
 
   # Install the dependencies
   $ pip install -r requirements.txt
-
-  # enter the folder
-  $ cd stock_sys
 
   # Start the aplication
   $ python run.py runserver
