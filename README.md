@@ -1,10 +1,7 @@
 ### TECHNOLOGIES USED
 - Python - Flask
 - HTML/CSS - Bootstrap
-
-### DEPENDENCIES
-- <a href="https://www.python.org/downloads/"> Python </a>
-
+- 
 ### GET STARTING
 
 1. Make a clone :
