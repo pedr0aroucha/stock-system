@@ -1,7 +1,7 @@
 ### TECHNOLOGIES USED
 - Python - Flask
 - HTML/CSS - Bootstrap
-- 
+
 ### GET STARTING
 
 1. Make a clone :
